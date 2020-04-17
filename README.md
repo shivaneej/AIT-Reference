@@ -23,4 +23,3 @@
 **Step 10**: Send requests to the server using Postman<br>
 
 [Mongoose Queries Reference](https://mongoosejs.com/docs/queries.html)
-

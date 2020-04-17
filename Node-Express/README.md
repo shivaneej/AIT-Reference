@@ -12,8 +12,12 @@
 5. Demonstrate the use of Custom middleware to check the user age is valid or not. To view this, accept the user input as name & age, for age use middleware and if age is not valid then show the error message and if valid then show an appropriate message.
    - [custom-middleware.js](custom-middleware.js)
 6. File operation
+   - [file-ops.js](file-ops.js)
+   - [Reference](https://riptutorial.com/node-js/example/5637/check-permissions-of-a-file-or-directory)
 7. Building your own modules
 8. Cluster module
-9. Readline:
+9. Readline
+   - [file-ops.js](file-ops.js)
+   - Install `prompt-sync` for prompts
 10. File upload
 11. Reverse proxy using ExpressJS
