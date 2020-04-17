@@ -1,6 +1,6 @@
 # AIT-Reference
 
-## [Implementation of Express js and Node.js](Node-Express/README.md)
+## [Implementation of Express js and Node.js](Node-Express)
 **Step 1**: Create a new folder<br>
 **Step 2**: Type `npm init` in the command prompt<br>
 **Step 3**: Type `npm install --save express` to install express<br>
