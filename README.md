@@ -10,7 +10,7 @@
 
 
 
-## Implementation of CRUD operations with Mongoose
+## [Implementation of CRUD operations with Mongoose](Mongoose-CRUD)
 **Step 1**: Download MongoDB from [here](https://www.mongodb.com/download-center/community?tck=docs_server)<br>
 **Step 2**: Create a new folder<br>
 **Step 3**: Type `npm init` in the command prompt<br>
@@ -23,3 +23,9 @@
 **Step 10**: Send requests to the server using Postman<br>
 
 [Mongoose Queries Reference](https://mongoosejs.com/docs/queries.html)
+
+## [Implementation of Angular](Angular)
+**Step 1**: Type `npm install -g @angular/cli` to install angular<br>
+**Step 2**: Create a new angular project by typing `ng new [proj-name]`<br>
+**Step 3**: Start the server by typing `ng serve`<br>
+

@@ -16,6 +16,8 @@
    - [Reference](https://riptutorial.com/node-js/example/5637/check-permissions-of-a-file-or-directory)
 7. Building your own modules
 8. Cluster module
+   - A cluster is a pool of similar workers running under a parent Node process
+   - [cluster.js](cluster.js)
 9. Readline
    - [file-ops.js](file-ops.js)
    - Install `prompt-sync` for prompts
