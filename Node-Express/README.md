@@ -20,4 +20,14 @@
    - [file-ops.js](file-ops.js)
    - Install `prompt-sync` for prompts
 10. File upload
+    - [file-upload.js](file-upload.js)
+    - accept attribute to select specific files only (comma separated)
+      |Value|Description
+      |:------------- |:-------------
+      |file_extension|Specify the file extension(s) (e.g: .gif, .jpg, .png, .doc) the user can pick from
+      |audio/*|All sound files
+      |video/*	|All video files
+      |image/*	|All image files
+      |media_type|Valid media type
+
 11. Reverse proxy using ExpressJS
