@@ -33,3 +33,7 @@
       |media_type|Valid media type
 
 11. Reverse proxy using ExpressJS
+    - Reverse proxy is a proxy server which retrieve resources on behalf of client from one or more servers
+    - [server-1.js](server-1.js), [server-2.js](server-2.js), [server-3.js](server-3.js)
+    - [proxy-server.js](proxy-server.js)
+    - Start all the four servers   
