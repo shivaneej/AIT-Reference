@@ -5,7 +5,8 @@
 **Step 2**: Type `npm init` in the command prompt<br>
 **Step 3**: Type `npm install --save express` to install express<br>
 **Step 4**: Install _body-parser_, _multer_ and _cookie-parser_<br>
-
+**Step 5**: Put static files in _static_ folder<br>
+**Step 6**: Type `node filename.js` to run the server<br>
 
 
 
