@@ -1,5 +1,14 @@
 # AIT-Reference
 
+## Implementation of Express js and Node.js
+**Step 1**: Create a new folder<br>
+**Step 2**: Type `npm init` in the command prompt<br>
+**Step 3**: Type `npm install --save express` to install express<br>
+**Step 4**: Install _body-parser_, _multer_ and _cookie-parser_<br>
+
+
+
+
 ## Implementation of CRUD operations with Mongoose
 **Step 1**: Download MongoDB from [here](https://www.mongodb.com/download-center/community?tck=docs_server)<br>
 **Step 2**: Create a new folder<br>

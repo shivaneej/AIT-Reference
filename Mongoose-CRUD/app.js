@@ -61,7 +61,7 @@ app.get('/users',(req,res) => {
 
 //GET user by ID
 app.get('/users/:id',(req,res)=>{
-    const id = req.params.id; //req.body for POST request and req.params for GET request
+    const id = req.params.id; //req.body for POST request and req.params for parameter in url else req.query
     console.log("GET request for single user with ID "+id);
     User.findById(id,(err,data) => {
         if(err)
