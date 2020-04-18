@@ -11,6 +11,8 @@ import { ReverseStringPipe } from './reverse-string.pipe';
 import { CampSitePipe, CampSitesImpurePipe } from './filter-locations.pipe';
 import { LocationsComponent, LocationsImpureComponent } from './locations.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { UserFormComponent } from './user-form/user-form.component';
     CampSitesImpurePipe,
     LocationsComponent,
     LocationsImpureComponent,
-    UserFormComponent //For angular forms
+    UserFormComponent,
+    LoginComponent,
+    SignupComponent //For angular forms
   ],
   imports: [
     BrowserModule,

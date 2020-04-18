@@ -66,5 +66,28 @@ A pipe takes in data as input and transforms it to a desired output<br>
    1. Component
    2.  Attribute
    3.  Structural
-## Routing: Demonstrate the use of Routing used in angular
+## [Routing: Demonstrate the use of Routing used in angular](https://angular.io/guide/router)<br>
+**Step 1**: Create new components as required for routing. Add respective HTML codes.<br>
+**Step 2**: Write Router Configuration in [app-routing.module.ts](src/app/app-routing.module.ts). Write the component class names in the `route` array<br>
+**Step 3**: Import AppRoutingModule in [app.module.ts](src/app/app.module.ts)<br>
+**Step 4**: Use `<router-outlet></router-outlet>` tags in [app.component.html](src/app/app.component.html)<br>
+
+Each route can have the following properties:
+- `path`: string, path to match the URL
+- `pathMatch`: string, how to match the URL
+- `component`: class reference, component to activate when this route is activated
+- `redirectTo`: string, URL to redirect to when this route is activated
+- `data`: static data to assign to route
+- `resolve`: dynamic data to resolve and merge with data when resolved
+- `children`: child routes
+
+Angular Router has two matching strategies:
+- `prefix`: default, matches when the URL starts with the value of path
+- `full`: matches when the URL equals the value of path
+
+There are two ways to create a routing module:
+- `RouterModule.forRoot(routes)`: creates a routing module that includes the router directives, the route configuration and the router service
+- `RouterModule.forChild(routes)`: creates a routing module that includes the router directives, the route configuration but not the router service. It is needed when the application has multiple routing modules.
+
+
 ## Services and Injectable:
