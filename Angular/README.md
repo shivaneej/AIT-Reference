@@ -3,7 +3,7 @@ To use bootstrap, add the line below in [styles.css](src/styles.css)<br>
 `
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 `
-## Pipes ([Documentation](https://angular.io/guide/pipes#pipes))
+## [Pipes](https://angular.io/guide/pipes#pipes)<br>
 A pipe takes in data as input and transforms it to a desired output<br>
 >Note: `FormsModule` has also been imported to implement this. Import by adding `FormsModule` in `imports` array of [app.module.ts](src/app/app.module.ts)
       <br>
@@ -40,11 +40,28 @@ A pipe takes in data as input and transforms it to a desired output<br>
       **Step 4**: Create a file [locations.component.ts](src/app/locations.component.ts)<br>
       **Step 5**: Import both the pipes and components in `declarations` array of [app.module.ts](src/app/app.module.ts)<br>
 
-## Form: Template Driven Form
-   1.  Build an Angular form with a component and template.
-   2.  Use ngModel to create two-way data bindings for reading and writing input-control values
-   3.  Track state changes and the validity of form controls.
-   4.  Handle form submission with ngSubmit.
+## [Form: Template Driven Form](https://angular.io/guide/forms)<br>
+   1.  Build an Angular form with a component and template<br>
+       **Step 1**: Create a new model class `ng generate class User`<br>
+       **Step 2**: In the constructor of User class, add attributes. Refer [user.ts](src/app/user.ts) <br>
+       **Step 3**: Create a new form component `UserForm` by typing `ng generate component UserForm`. Import in _app.module.ts_<br>
+       **Step 4**: Add HTML code in [user-form.component.html](src/app/user-form/user-form.component.html)<br>
+       **Step 5**: Update [user-form.component.ts](src/app/user-form/user-form.component.ts)<br>
+       **Step 6**: Use `<app-user-form></app-user-form>` in _app.component.html_<br>
+   2.  [ngModel to create two-way data bindings for reading and writing input-control values](https://angular.io/guide/forms#two-way-data-binding-with-ngmodel)<br>
+       **Step 1**: Add `[(ngModel)] = "model.attribute"` in `<input>` tags in the form in [user-form.component.html](src/app/user-form/user-form.component.html)<br>
+
+   3.  [Track state changes and the validity of form controls](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel)<br>
+       **Step 1**: Add `#spy` in the end of `<input>` tags in the form [user-form.component.html](src/app/user-form/user-form.component.html)<br>
+       **Step 2**: After the `<input>` tags, add `<br>Control state and validity: {{spy.className}}` to view the state changes and validity.
+       |State|Class if true|Class if false
+       |:--- |:------------|:------------
+       |Control has been visited|ng-touched|ng-untouched
+       |Control's value has changed|ng-dirty|ng-pristine
+       |Control's value is valid|ng-valid|ng-invalid
+
+   4.  [Handle form submission with ngSubmit](https://angular.io/guide/forms#submit-the-form-with-ngsubmit)<br>
+       Add `(ngSubmit)="onSubmit()" ` in the `<form>` tag and `[disabled]="!userForm.form.valid"` in the submit `<button>` opening tag<br>
 ## Custom Directive: Demonstrate the use of Custom Directive as
    1. Component
    2.  Attribute

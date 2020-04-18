@@ -10,6 +10,7 @@ import { TitleCasePipe } from '@angular/common';
 import { ReverseStringPipe } from './reverse-string.pipe';
 import { CampSitePipe, CampSitesImpurePipe } from './filter-locations.pipe';
 import { LocationsComponent, LocationsImpureComponent } from './locations.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LocationsComponent, LocationsImpureComponent } from './locations.compon
     CampSitePipe, //import these for pure and impure pipes
     CampSitesImpurePipe,
     LocationsComponent,
-    LocationsImpureComponent
+    LocationsImpureComponent,
+    UserFormComponent //For angular forms
   ],
   imports: [
     BrowserModule,
