@@ -109,6 +109,7 @@ There are two ways to create a routing module:
 
 ## Services and Injectable:
 > Service has the functions to handle the cart operations<br>
+
 **Step 1**: Create a new class `Item` using `ng generate class Item`, write the schema in [item.ts](src/app/item.ts)<br>
 **Step 2**: Create a list of items to be displayed on the product page in [sample-items.ts](src/app/sample-items.ts)<br>
 **Step 3**: Create a new service for listing the items on the product page by typing `ng generate service item`<br>
