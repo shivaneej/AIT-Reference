@@ -47,5 +47,5 @@ readInterface.on('close', () => {
 //prompt user input
 const prompt = require('prompt-sync')();  
 
-const msg = prompt('Enter message: \n');
+const msg = prompt('Enter message:');
 console.log("You entered "+msg);
