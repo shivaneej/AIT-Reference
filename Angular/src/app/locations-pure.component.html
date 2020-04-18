@@ -1,0 +1,19 @@
+<h4>{{title}}</h4>
+<p>New Location:
+<input type="text" #box (keyup.enter)="addDestination(box.value); box.value=''" placeholder="Destination">
+<input id="camp" type="checkbox" [(ngModel)]="camp"> Camp Site
+</p>
+ 
+<h4>Camp Locations</h4>
+<div id="campSites">
+  <div *ngFor="let location of (locations | campSites)">
+    {{location.name}}
+  </div>
+</div>
+ 
+<h4>All Locations</h4>
+<div id="all">
+  <div *ngFor="let location of locations">
+    {{location.name}}
+  </div>
+</div>
