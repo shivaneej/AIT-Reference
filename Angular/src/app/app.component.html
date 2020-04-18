@@ -20,4 +20,22 @@
 <!-- <app-user-form></app-user-form> -->
 
 <!-- Routing -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+
+<!-- Structural Directive -->
+
+<!-- <div>
+    <h3>This will always be displayed</h3>
+    <h4 *appHideElement = "true"> This will be hidden</h4>
+    <h4 *appHideElement = "false"> This will not be hidden</h4>
+</div> -->
+
+<!-- Attribute Directive -->
+<h4>Pick a highlight color</h4> 
+<div> 
+    <input type="radio" name="colors" (click)="color='lightgreen'">Green
+    <input type="radio" name="colors" (click)="color='yellow'">Yellow
+    <input type="radio" name="colors" (click)="color='cyan'">Cyan 
+</div>
+    <p [appHighlight]="color">Highlight me!</p>

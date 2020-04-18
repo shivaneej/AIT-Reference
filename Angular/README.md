@@ -64,8 +64,25 @@ A pipe takes in data as input and transforms it to a desired output<br>
        Add `(ngSubmit)="onSubmit()" ` in the `<form>` tag and `[disabled]="!userForm.form.valid"` in the submit `<button>` opening tag<br>
 ## Custom Directive: Demonstrate the use of Custom Directive as
    1. Component
-   2.  Attribute
-   3.  Structural
+      ```
+      @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+      })
+      ```
+   2.  Attribute: Changes the appearance or behaviour of a DOM element<br>
+   **Step 1**: Create a nre directive `ng generate directive directive-name`. `highlight` here<br>
+   **Step 2**: Write the code to modify the DOM element in [highlight.directive.ts](src/app/highlight.directive.ts)<br>
+   **Step 3**: Use the selector defined in the `highlight.directive.ts` with some color value in HTML to allow the directive to modify the css property.<br>
+  
+   3.  Structural: Changes DOM layout by adding and removing DOM elements<br>
+   **Step 1**: Create a new directive `ng generate directive directive-name`. `hideElement` here<br>
+   **Step 2**: Write the code to hide/show DOM element in [hide-element.directive.ts](src/app/hide-element.directive.ts)<br>
+   **Step 3**: Use the selector defined in the `hide-element.directive.ts` with some boolean value in HTML.<br>
+   > Note: The @Input decorator used in the `hide-element.directive.ts` file makes data flow from the binding expression into the directive.<br>
+
+
 ## [Routing: Demonstrate the use of Routing used in angular](https://angular.io/guide/router)<br>
 **Step 1**: Create new components as required for routing. Add respective HTML codes.<br>
 **Step 2**: Write Router Configuration in [app-routing.module.ts](src/app/app-routing.module.ts). Write the component class names in the `route` array<br>

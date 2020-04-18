@@ -13,6 +13,8 @@ import { LocationsComponent, LocationsImpureComponent } from './locations.compon
 import { UserFormComponent } from './user-form/user-form.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { HideElementDirective } from './hide-element.directive';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SignupComponent } from './signup/signup.component';
     LocationsImpureComponent,
     UserFormComponent,
     LoginComponent,
-    SignupComponent //For angular forms
+    SignupComponent,
+    HideElementDirective,
+    HighlightDirective //For angular forms
   ],
   imports: [
     BrowserModule,

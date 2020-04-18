@@ -11,5 +11,6 @@ export class AppComponent {
   toggle = true; // start with true == shortDate
   get format()   { return this.toggle ? 'shortDate' : 'fullDate'; }
   toggleFormat() { this.toggle = !this.toggle; }
+  color: string; //for attribute directive
 
 }
