@@ -1,0 +1,59 @@
+<div class="container" style="width: 60%; margin: auto;">
+    <h1>User Signup Form</h1>
+    <!-- This form is for part (a) -->
+    <!-- <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="number" class="form-control" id="mobile">
+      </div>
+ 
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+ 
+      <button type="submit" class="btn btn-success">Submit</button>
+ 
+    </form> -->
+
+    <!-- This form is for part (b) -->
+    <form (ngSubmit)="onSubmit()" #userForm = "ngForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <!-- Uncomment the below statement for part (a) -->
+          <!-- <input type="text" class="form-control" id="name" required [(ngModel)] = "model.name" name= "name"> -->
+
+          <!-- Uncomment the next two statements and comment the above statement for part (c) -->
+          <!--
+          <input type="text" class="form-control" id="name" required [(ngModel)] = "model.name" name= "name" #spy>
+          <br>Control state and validity: {{spy.className}}
+          -->
+
+          <!-- Comment all the statements and uncomment the below statement for validation in part(c) -->
+          <input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" required #name="ngModel">
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger"> Name is required </div>
+
+        </div>
+        
+        <div class="form-group">
+          <label for="mobile">Mobile</label>
+          <input type="number" class="form-control" id="mobile" [(ngModel)] = "model.mobile" name= "mobile">
+        </div>
+   
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required [(ngModel)] = "model.email" name= "email">
+        </div>
+        
+        <!-- Handles form submit using ngSubmit -->
+        <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">Submit</button>
+        <button type="button" class="btn btn-default" (click)="newUser(); userForm.reset()">New User</button>
+   
+      </form>
+  
+</div>
