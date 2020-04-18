@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HideElementDirective } from './hide-element.directive';
 import { HighlightDirective } from './highlight.directive';
+import { StoreComponent } from './store/store.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HighlightDirective } from './highlight.directive';
     LoginComponent,
     SignupComponent,
     HideElementDirective,
-    HighlightDirective //For angular forms
+    HighlightDirective,
+    StoreComponent,
+    CartComponent //For angular forms
   ],
   imports: [
     BrowserModule,
