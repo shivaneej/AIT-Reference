@@ -24,6 +24,14 @@
 
 [Mongoose Queries Reference](https://mongoosejs.com/docs/queries.html)
 
+## [REST API using Node, Express, Mongoose - Student Application](StudentApp)
+**Step 1**: Create a new folder, type `npm init`<br>
+**Step 2**: Install *express*, *body-parser*, *mongoose*, *ejs*<br>
+**Step 3**: Start MongoDB Server, write the Schema in [models/student.model.js](StudentApp/models/student.model.js)<br>
+**Step 4**: Save the `ejs` files in [views](StudentApp/views) folder<br>
+**Step 5**: The server code is in [server.js](StudentApp/server.js)<br>
+
+
 ## [Implementation of Angular](Angular)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.<br>
 **Step 1**: Type `npm install -g @angular/cli` to install angular<br>
